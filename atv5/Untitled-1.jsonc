@@ -1,0 +1,42 @@
+
+// Criação de um novo banco NoSQL
+
+use funcionario;
+
+// Inclusão dos dados presentes na tabela “funcionario” do banco de dados SQL usado nas atividades (Observe os relacionamentos dessa tabela com “cargo” e “usuario”.)
+
+db.funcionario.insertOne({
+    nomeFuncionario: "Oliver",
+    telefone: 5511987591212,
+    cpf: 1234567891011,
+    cargo: {
+        descricao: "Funcionario",
+        salario: 2000,
+        comissao: 50
+    },
+    usuario: {
+    login: "Pereira",
+    senha: 123456,
+    ultimo_login: 2022/04/13
+    }
+});
+
+
+// Atualização de dados de “funcionario” (qualquer campo de sua preferência)
+
+
+ db.funcionario.updateOne(
+    { "nomeFuncionario" : "Lucas" }, 
+    { $set: { "nomeFuncionario" : "Lucas Nascimento" }
+    } 
+ );
+
+ // Busca de funcionário por nome
+
+ db.funcionario.find({nomeFuncionario: "Lucas"})
+
+ // Busca de funcionário por cargo
+
+ db.participante.find({"cargo.descricao": "Funcionario"})
+
+
