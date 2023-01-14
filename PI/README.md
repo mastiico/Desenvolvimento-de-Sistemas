@@ -2,7 +2,7 @@
  🍰<br>Cakes&Cakes
 </h1>
 
-## Projeto integrador do curso de Desenvolvimento de Sistema no SENAC;
+## Projeto integrador do curso de Desenvolvimento de Sistema no SENAC
 
 
 - Começamos na parte do banco de dados MySql.
