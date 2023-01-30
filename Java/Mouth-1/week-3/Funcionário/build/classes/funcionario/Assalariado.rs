@@ -1,0 +1,2 @@
+Funcionario.Assalariado
+funcionário.Assalariado
