@@ -23,7 +23,12 @@ public class IPI implements Imposto {
 
     @Override
     public String getDescricao() {
-        return "IPI";
+        return "----------IPI---------- \nValor do Produto: R$ " + valorProduto + 
+               "\nValor do Frete: R$" + frete + 
+                "\nValor do Seguro: R$" + seguro + 
+                "\nValor de Outras Despesas: R$" + outrasDespesas +
+                "\nPercentual da Aliquota: " + aliquota + "%\n";
+        
     }
 
     // Getters

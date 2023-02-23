@@ -33,11 +33,6 @@ public class Pagamentos {
         impostos.add(imposto);
     }
     
-    // método para remover um imposto da lista
-    public void removerImposto(Imposto imposto) {
-        impostos.remove(imposto);
-    }
-    
     // método para calcular o valor total de impostos a serem pagos
     public double calcularTotalImpostos() {
         double total = 0.0;

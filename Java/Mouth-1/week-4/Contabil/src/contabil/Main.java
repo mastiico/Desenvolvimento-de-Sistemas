@@ -45,8 +45,9 @@ public class Main {
                 System.out.println("Digite o valor de outras despesas:");
                 float outrasDespesas = input.nextFloat();
                 input.nextLine();
-                System.out.println("Digite o valor aliquota:");
+                System.out.println("Digite o percentual aliquota:");
                 float aliquota = input.nextFloat();
+                input.nextLine();
                 imposto = new IPI(valorProduto, frete, seguro, outrasDespesas, aliquota);
             } else {
                 System.out.println("Tipo de imposto inválido.");
@@ -60,7 +61,7 @@ public class Main {
         System.out.println("\nImpostos pagos pela empresa " + nomeEmpresa + ":");
 
         for (Imposto imposto : pagamentos.getImpostos()) {
-            System.out.println(imposto.getDescricao() + ": R$" + imposto.calcularImposto());
+            System.out.println(imposto.getDescricao() + "\nValor total: R$" + imposto.calcularImposto());
         }
 
     }

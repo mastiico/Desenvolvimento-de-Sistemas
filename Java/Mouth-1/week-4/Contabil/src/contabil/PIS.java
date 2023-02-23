@@ -27,7 +27,7 @@ public class PIS implements Imposto {
 
     @Override
     public String getDescricao() {
-        return "PIS";
+        return "----------PIS---------- \nValor debito: " + valorDebito + "\nValor credito: " + valorCredito + "\n";
     }
 
     @Override
